@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ElectronicAdsBoard.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:ElectronicAdsBoard.Contracts.AdDto">
+            <summary>
+            Объявление.
+            </summary>
+        </member>
+        <member name="P:ElectronicAdsBoard.Contracts.AdDto.Name">
+            <summary>
+            Имя товара.
+            </summary>
+        </member>
+        <member name="P:ElectronicAdsBoard.Contracts.AdDto.Price">
+            <summary>
+            Цена товара.
+            </summary>
+        </member>
+        <member name="P:ElectronicAdsBoard.Contracts.AdDto.Address">
+            <summary>
+            Адрес, где можно забрать товар.
+            </summary>
+        </member>
+        <member name="P:ElectronicAdsBoard.Contracts.AdDto.Tags">
+            <summary>
+            Теги к товару.
+            </summary>
+        </member>
+        <member name="P:ElectronicAdsBoard.Contracts.AdDto.Images">
+            <summary>
+            Изображения.
+            </summary>
+        </member>
+        <member name="P:ElectronicAdsBoard.Contracts.AdDto.Description">
+            <summary>
+            Описание товара.
+            </summary>
+        </member>
+        <member name="P:ElectronicAdsBoard.Contracts.AdDto.Category">
+            <summary>
+            Название категории товара.
+            </summary>
+        </member>
+        <member name="T:ElectronicAdsBoard.Contracts.Base.BaseDto">
+            <summary>
+            Базовый контракт.
+            </summary>
+        </member>
+        <member name="P:ElectronicAdsBoard.Contracts.Base.BaseDto.Id">
+            <summary>
+            Идентификатор сущности
+            </summary>
+        </member>
+        <member name="P:ElectronicAdsBoard.Contracts.Image.ImageDto.Images">
+            <summary>
+            Фотографии товара.
+            </summary>
+        </member>
+    </members>
+</doc>
