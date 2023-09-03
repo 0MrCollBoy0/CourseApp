@@ -11,14 +11,11 @@
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <DocumentationFile>ElectronicAdsBoard.Contracts.xml</DocumentationFile>
+      <DocumentationFile></DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
       <None Remove="ElectronicAdsBoard.Contracts.xml" />
-      <Content Include="ElectronicAdsBoard.Contracts.xml">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
     </ItemGroup>
 
 </Project>

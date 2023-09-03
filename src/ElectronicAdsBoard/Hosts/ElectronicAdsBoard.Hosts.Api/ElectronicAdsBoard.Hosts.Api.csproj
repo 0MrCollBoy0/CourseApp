@@ -11,6 +11,10 @@
       <DocumentationFile>ElectronicAdsBoard.Hosts.Api.xml</DocumentationFile>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>ElectronicAdsBoard.Hosts.Api.xml</DocumentationFile>
+    </PropertyGroup>
+
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
@@ -24,12 +28,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Contracts\ElectronicAdsBoard.Contracts\ElectronicAdsBoard.Contracts.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Update="ElectronicAdsBoard.Hosts.Api.xml">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
+      <ProjectReference Include="..\..\Domain\ElectronicAdsBoard.Domain\ElectronicAdsBoard.Domain.csproj" />
     </ItemGroup>
 
 </Project>

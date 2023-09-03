@@ -1,4 +1,4 @@
-﻿namespace ElectronicAdsBoard.Domain.Base;
+namespace ElectronicAdsBoard.Domain.Base;
 /// <summary>
 /// Базовая сущность.
 /// </summary>

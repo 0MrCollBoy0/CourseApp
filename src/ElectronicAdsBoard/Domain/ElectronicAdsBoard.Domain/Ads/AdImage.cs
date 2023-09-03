@@ -1,8 +1,10 @@
 ﻿using ElectronicAdsBoard.Domain.Base;
 
 namespace ElectronicAdsBoard.Domain.Ads;
-
-public class Image:BaseEntity
+/// <summary>
+/// Сущность фотографий товара.
+/// </summary>
+public class AdImage:BaseEntity
 {
     /// <summary>
     /// Фотографии товара.

@@ -1,8 +1,10 @@
-﻿namespace ElectronicAdsBoard.Domain.Ads;
+﻿using ElectronicAdsBoard.Domain.Base;
+
+namespace ElectronicAdsBoard.Domain.Ads;
 /// <summary>
 /// сущность объявлений
 /// </summary>
-public class Ad
+public class Ad:BaseEntity
 {
     /// <summary>
     /// Имя товара.

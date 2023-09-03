@@ -10,7 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c312678-85dc-4c17-9f7b-b4d95e69fccb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Domain/ElectronicAdsBoard.Domain/Users/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Domain/ElectronicAdsBoard.Domain/Users/UserImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CourseApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CourseApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Contracts/ElectronicAdsBoard.Contracts/ElectronicAdsBoard.Contracts.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Contracts/ElectronicAdsBoard.Contracts/ElectronicAdsBoard.Contracts.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Contracts/ElectronicAdsBoard.Contracts/ElectronicAdsBoard.Contracts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Domain/ElectronicAdsBoard.Domain/Ads/Ad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Domain/ElectronicAdsBoard.Domain/Ads/Ad.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Domain/ElectronicAdsBoard.Domain/Ads/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Domain/ElectronicAdsBoard.Domain/Ads/AdImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Domain/ElectronicAdsBoard.Domain/Base/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Domain/ElectronicAdsBoard.Domain/Base/BaseEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/ElectronicAdsBoard.Hosts.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/ElectronicAdsBoard.Hosts.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/ElectronicAdsBoard.Hosts.Api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -133,7 +145,10 @@
       <updated>1692810325695</updated>
       <workItem from="1692810326773" duration="307000" />
       <workItem from="1692810778249" duration="12777000" />
-      <workItem from="1693019790708" duration="2074000" />
+      <workItem from="1693019790708" duration="2703000" />
+      <workItem from="1693406595354" duration="12742000" />
+      <workItem from="1693768167000" duration="505000" />
+      <workItem from="1693768695149" duration="839000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -151,7 +166,23 @@
       <option name="project" value="LOCAL" />
       <updated>1692982816997</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1693155281675</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693155281675</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Создал скелет приложения">
+      <option name="closed" value="true" />
+      <created>1693155361352</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693155361352</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +200,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -184,8 +215,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Создал скелет приложения." />
-    <option name="LAST_COMMIT_MESSAGE" value="Создал скелет приложения." />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Создал скелет приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создал скелет приложения" />
   </component>
 </project>
