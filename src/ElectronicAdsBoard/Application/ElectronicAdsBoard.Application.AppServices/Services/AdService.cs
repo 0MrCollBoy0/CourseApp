@@ -5,12 +5,12 @@ namespace ElectronicAdsBoard.Application.AppServices.Services;
 
 public class AdService:IAdService
 {
-    public IAsyncEnumerable<AdDto> GetAllAsync(int pageSize, int pageIndex)
+    public async Task<IEnumerable<AdDto>> GetAllAsync(int pageSize, int pageIndex)
     {
         return null;
     }
 
-    public AdDto GetByIdAsync(Guid id)
+    public Task<AdDto> GetByIdAsync(Guid id)
     {
         return null;
     }

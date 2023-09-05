@@ -27,7 +27,7 @@ public class AdController:ControllerBase
     [HttpGet("get-all")]
     public async Task<IActionResult> GetAllAsync(CancellationToken cancellationToken, int pageSize = 10, int pageIndex = 0)
     {
-        _adService.GetAllAsync(pageSize, pageIndex);
+        await _adService.GetAllAsync(pageSize, pageIndex);
         return Ok();
     }
 
@@ -40,7 +40,7 @@ public class AdController:ControllerBase
     [HttpGet("get-by-id")]
     public async Task<IActionResult> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
-        _adService.GetByIdAsync(id);
+        await _adService.GetByIdAsync(id);
         return Ok();
     }
 
@@ -52,7 +52,7 @@ public class AdController:ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateAsync(AdDto dto, CancellationToken cancellationToken)
     {
-        _adService.CreateAsync(dto);
+        await _adService.CreateAsync(dto);
         return Created(string.Empty, null);
     }
 
@@ -64,7 +64,7 @@ public class AdController:ControllerBase
     [HttpPut]
     public async Task<IActionResult> UpdateAsync(AdDto dto, CancellationToken cancellationToken)
     {
-        _adService.UpdateAsync(dto);
+        await _adService.UpdateAsync(dto);
         return Ok();
     }
 
@@ -76,7 +76,7 @@ public class AdController:ControllerBase
     [HttpDelete]
     public async Task<IActionResult> DeleteAsync(Guid id, CancellationToken cancellationToken)
     {
-        _adService.DeleteAsync(id);
+        await _adService.DeleteAsync(id);
         return Ok();
     }
 }
