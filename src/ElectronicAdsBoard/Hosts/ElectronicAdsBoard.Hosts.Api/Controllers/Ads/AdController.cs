@@ -1,4 +1,5 @@
-﻿using ElectronicAdsBoard.Contracts;
+﻿using ElectronicAdsBoard.Application.AppServices.Interfaces;
+using ElectronicAdsBoard.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ElectronicAdsBoard.Hosts.Api.Controllers.Ads;
@@ -9,6 +10,13 @@ namespace ElectronicAdsBoard.Hosts.Api.Controllers.Ads;
 [Route("controller")]
 public class AdController:ControllerBase
 {
+
+    private readonly IAdService _adService;
+
+    public AdController(IAdService adService)
+    {
+        _adService = adService;
+    }
     /// <summary>
     /// Возвращает объявления постранично.
     /// </summary>
@@ -19,6 +27,7 @@ public class AdController:ControllerBase
     [HttpGet("get-all")]
     public async Task<IActionResult> GetAllAsync(CancellationToken cancellationToken, int pageSize = 10, int pageIndex = 0)
     {
+        _adService.GetAllAsync(pageSize, pageIndex);
         return Ok();
     }
 
@@ -31,6 +40,7 @@ public class AdController:ControllerBase
     [HttpGet("get-by-id")]
     public async Task<IActionResult> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
+        _adService.GetByIdAsync(id);
         return Ok();
     }
 
@@ -42,6 +52,7 @@ public class AdController:ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateAsync(AdDto dto, CancellationToken cancellationToken)
     {
+        _adService.CreateAsync(dto);
         return Created(string.Empty, null);
     }
 
@@ -53,6 +64,7 @@ public class AdController:ControllerBase
     [HttpPut]
     public async Task<IActionResult> UpdateAsync(AdDto dto, CancellationToken cancellationToken)
     {
+        _adService.UpdateAsync(dto);
         return Ok();
     }
 
@@ -64,6 +76,7 @@ public class AdController:ControllerBase
     [HttpDelete]
     public async Task<IActionResult> DeleteAsync(Guid id, CancellationToken cancellationToken)
     {
+        _adService.DeleteAsync(id);
         return Ok();
     }
 }

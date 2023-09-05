@@ -27,6 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Application\ElectronicAdsBoard.Application.AppServices\ElectronicAdsBoard.Application.AppServices.csproj" />
       <ProjectReference Include="..\..\Contracts\ElectronicAdsBoard.Contracts\ElectronicAdsBoard.Contracts.csproj" />
       <ProjectReference Include="..\..\Domain\ElectronicAdsBoard.Domain\ElectronicAdsBoard.Domain.csproj" />
     </ItemGroup>
