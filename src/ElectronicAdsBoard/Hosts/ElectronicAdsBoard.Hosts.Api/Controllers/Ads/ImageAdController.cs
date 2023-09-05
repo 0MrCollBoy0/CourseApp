@@ -4,7 +4,7 @@ namespace ElectronicAdsBoard.Hosts.Api.Controllers;
 /// <summary>
 /// Контроллер для работы с фотографиями объявлений.
 /// </summary>
-public class ImageController: ControllerBase
+public class ImageAdController: ControllerBase
 {
     /// <summary>
     /// Возвращает список фотографий по индентификатору.

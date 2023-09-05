@@ -1,7 +1,7 @@
 ﻿using ElectronicAdsBoard.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ElectronicAdsBoard.Hosts.Api.Controllers;
+namespace ElectronicAdsBoard.Hosts.Api.Controllers.Ads;
 /// <summary>
 /// Контроллер для работы с объявлениями.
 /// </summary>
@@ -62,7 +62,7 @@ public class AdController:ControllerBase
     /// <param name="id">Идентификатор объявления</param>
     /// <param name="cancellationToken">Отмена</param>
     [HttpDelete]
-    public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
+    public async Task<IActionResult> DeleteAsync(Guid id, CancellationToken cancellationToken)
     {
         return Ok();
     }

@@ -1,5 +1,7 @@
 using ElectronicAdsBoard.Contracts;
 using ElectronicAdsBoard.Hosts.Api.Controllers;
+using ElectronicAdsBoard.Hosts.Api.Controllers.Ads;
+using ElectronicAdsBoard.Hosts.Api.Controllers.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +15,7 @@ builder.Services.AddSwaggerGen(s =>
     var includeDocsTypesMarkers = new[]
     {
         typeof(AdDto),
-        typeof(ImageController),
+        typeof(ImageAdController),
         typeof(AdController)
     };
 
