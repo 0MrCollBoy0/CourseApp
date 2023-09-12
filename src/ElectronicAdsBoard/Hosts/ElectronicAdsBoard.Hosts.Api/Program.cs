@@ -1,7 +1,10 @@
+using ElectronicAdsBoard.Application.AppServices.Interfaces;
+using ElectronicAdsBoard.Application.AppServices.Services;
 using ElectronicAdsBoard.Contracts;
 using ElectronicAdsBoard.Hosts.Api.Controllers;
 using ElectronicAdsBoard.Hosts.Api.Controllers.Ads;
 using ElectronicAdsBoard.Hosts.Api.Controllers.Users;
+using ElectronicAdsBoard.Infrastructure.Access.Context.Ad.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +30,9 @@ builder.Services.AddSwaggerGen(s =>
         if (File.Exists(xmlPath)) s.IncludeXmlComments(xmlPath);
     }
 });
+
+builder.Services.AddTransient<IAdService, AdService>();
+builder.Services.AddTransient<IAdRepository, AdRepository>();
 
 var app = builder.Build();
 

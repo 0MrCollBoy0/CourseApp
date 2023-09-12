@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ElectronicAdsBoard.Hosts.Api</name>
+    </assembly>
+    <members>
+        <member name="T:ElectronicAdsBoard.Hosts.Api.Controllers.Ads.AdController">
+            <summary>
+            Контроллер для работы с объявлениями.
+            </summary>
+        </member>
+        <member name="M:ElectronicAdsBoard.Hosts.Api.Controllers.Ads.AdController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возвращает объявления постранично.
+            </summary>
+            <param name="cancellationToken">Отмена</param>
+            <param name="pageSize">Количество объявлений на каждой странице</param>
+            <param name="pageIndex">Номер страницы</param>
+            <returns>Список моделей объявления<see cref="T:ElectronicAdsBoard.Contracts.AdDto"/></returns>
+        </member>
+        <member name="M:ElectronicAdsBoard.Hosts.Api.Controllers.Ads.AdController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает объявление по идентифекатору
+            </summary>
+            <param name="id">Идентификатор</param>
+            <param name="cancellationToken">Отмена</param>
+            <returns>Модель объявления<see cref="T:ElectronicAdsBoard.Contracts.AdDto"/> </returns>
+        </member>
+        <member name="M:ElectronicAdsBoard.Hosts.Api.Controllers.Ads.AdController.CreateAsync(ElectronicAdsBoard.Contracts.Ad.CreateAdDto,System.Threading.CancellationToken)">
+            <summary>
+            Создаёт новую модель объявления.
+            </summary>
+            <param name="dto">модель для создания</param>
+            <param name="cancellationToken">Отмена</param>
+        </member>
+        <member name="M:ElectronicAdsBoard.Hosts.Api.Controllers.Ads.AdController.UpdateAsync(ElectronicAdsBoard.Contracts.AdDto,System.Threading.CancellationToken)">
+            <summary>
+            Редактирует объявление.
+            </summary>
+            <param name="dto">Модель для изменения</param>
+            <param name="cancellationToken">Отмена</param>
+        </member>
+        <member name="M:ElectronicAdsBoard.Hosts.Api.Controllers.Ads.AdController.DeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удаляет объявления по идентификатору.
+            </summary>
+            <param name="id">Идентификатор объявления</param>
+            <param name="cancellationToken">Отмена</param>
+        </member>
+        <member name="T:ElectronicAdsBoard.Hosts.Api.Controllers.ImageAdController">
+            <summary>
+            Контроллер для работы с фотографиями объявлений.
+            </summary>
+        </member>
+        <member name="M:ElectronicAdsBoard.Hosts.Api.Controllers.ImageAdController.GetById(System.Guid)">
+            <summary>
+            Возвращает список фотографий по индентификатору.
+            </summary>
+            <param name="id">Идентификатор</param>
+            <returns>Возвращает список фотографий <see cref="!:ImageDto"/></returns>
+        </member>
+        <member name="T:ElectronicAdsBoard.Hosts.Api.Controllers.ImageUserController">
+            <summary>
+            Контроллер для работы с фотографиями объявлений.
+            </summary>
+        </member>
+        <member name="M:ElectronicAdsBoard.Hosts.Api.Controllers.ImageUserController.GetById(System.Guid)">
+            <summary>
+            Возвращает список фотографий по индентификатору.
+            </summary>
+            <param name="id">Идентификатор</param>
+            <returns>Возвращает список фотографий <see cref="!:ImageDto"/></returns>
+        </member>
+    </members>
+</doc>
