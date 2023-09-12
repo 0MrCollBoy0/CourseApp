@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicAdsBoard.Infrastructure", "src\ElectronicAdsBoard\Infrastructure\ElectronicAdsBoard.Infrastructure\ElectronicAdsBoard.Infrastructure.csproj", "{C2153F89-104C-4F96-A5E8-2BA0861F0D68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicAdsBoard.Infrastructure.Access", "src\ElectronicAdsBoard\Infrastructure\ElectronicAdsBoard.Infrastructure.Access\ElectronicAdsBoard.Infrastructure.Access.csproj", "{B70DA71E-5EFC-4CDE-957D-CAAEAC5331DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicAdsBoard.Infrastructure.DataAccess", "src\ElectronicAdsBoard\Infrastructure\ElectronicAdsBoard.Infrastructure.DataAccess\ElectronicAdsBoard.Infrastructure.DataAccess.csproj", "{B70DA71E-5EFC-4CDE-957D-CAAEAC5331DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicAdsBoard.Infrastructure.ComponentRegistrar", "src\ElectronicAdsBoard\Infrastructure\ElectronicAdsBoard.Infrastructure.ComponentRegistrar\ElectronicAdsBoard.Infrastructure.ComponentRegistrar.csproj", "{DFE0A613-6EE2-4EBC-A014-B96F60043C60}"
 EndProject

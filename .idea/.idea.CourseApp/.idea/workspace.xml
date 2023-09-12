@@ -9,8 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c312678-85dc-4c17-9f7b-b4d95e69fccb" name="Changes" comment="Добавил сервисы для сущностей &quot;Пользователь&quot; и &quot;Объявление&quot;.">
+    <list default="true" id="5c312678-85dc-4c17-9f7b-b4d95e69fccb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Application/ElectronicAdsBoard.Application.AppServices/Interfaces/IAdRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Contracts/ElectronicAdsBoard.Contracts/Ad/CreateAdDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Infrastructure/ElectronicAdsBoard.Infrastructure.DataAccess/Context/Ad/Repositories/AdRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CourseApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CourseApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CourseApp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CourseApp.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Application/ElectronicAdsBoard.Application.AppServices/ElectronicAdsBoard.Application.AppServices.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Application/ElectronicAdsBoard.Application.AppServices/ElectronicAdsBoard.Application.AppServices.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Application/ElectronicAdsBoard.Application.AppServices/Interfaces/IAdService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Application/ElectronicAdsBoard.Application.AppServices/Interfaces/IAdService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Application/ElectronicAdsBoard.Application.AppServices/Services/AdService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Application/ElectronicAdsBoard.Application.AppServices/Services/AdService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Controllers/Ads/AdController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Controllers/Ads/AdController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicAdsBoard/Infrastructure/ElectronicAdsBoard.Infrastructure.Access/ElectronicAdsBoard.Infrastructure.Access.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicAdsBoard/Infrastructure/ElectronicAdsBoard.Infrastructure.DataAccess/ElectronicAdsBoard.Infrastructure.DataAccess.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +35,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/59cd7a17e4fcffda1ba3687b386939b4e155ba482f85c8fe9993bc8373d7f93/ApiBehaviorApplicationModelProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/musta/OneDrive/Рабочий стол/ASP.NET Rider/CourseApp/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Controllers/Ads/AdController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/musta/OneDrive/Рабочий стол/ASP.NET Rider/CourseApp/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Controllers/Users/UserController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/musta/OneDrive/Рабочий стол/ASP.NET Rider/CourseApp/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/81a3bcf4bb6aa5e62a9839f9cfeeba6126496f4fa07d1e57b27a5176e42525/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2UOUsIzY4uIHRyAjkaaMKMsCBgb" />
@@ -39,27 +46,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\musta\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\musta\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\musta\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\musta\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\musta\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\musta\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ElectronicAdsBoard.Hosts.Api: http">
     <configuration name="ElectronicAdsBoard.Hosts.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/ElectronicAdsBoard.Hosts.Api.csproj" />
@@ -141,7 +149,8 @@
       <workItem from="1693768167000" duration="505000" />
       <workItem from="1693768695149" duration="1444000" />
       <workItem from="1693807548794" duration="864000" />
-      <workItem from="1693902960997" duration="4552000" />
+      <workItem from="1693902960997" duration="6290000" />
+      <workItem from="1694510117241" duration="5272000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -199,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693907253123</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Исправил асинхронные методы.">
+      <option name="closed" value="true" />
+      <created>1693933132436</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693933132436</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +255,52 @@
     <MESSAGE value="Добавил сущность &quot;Пользователь&quot;" />
     <MESSAGE value="Добавил контроллер &quot;Пользователь&quot;" />
     <MESSAGE value="Добавил сервисы для сущностей &quot;Пользователь&quot; и &quot;Объявление&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил сервисы для сущностей &quot;Пользователь&quot; и &quot;Объявление&quot;." />
+    <MESSAGE value="Исправил асинхронные методы." />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил асинхронные методы." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/ElectronicAdsBoard/Infrastructure/ElectronicAdsBoard.Infrastructure.DataAccess/Context/Ad/Repositories/AdRepository.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\musta\OneDrive\Рабочий стол\ASP.NET Rider\CourseApp\src\ElectronicAdsBoard\Infrastructure\ElectronicAdsBoard.Infrastructure.DataAccess\Context\Ad\Repositories\AdRepository.cs" initialLine="23" containingFunctionPresentation="Method 'CreateAsync'">
+            <startOffsets>
+              <option value="811" />
+            </startOffsets>
+            <endOffsets>
+              <option value="812" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/ElectronicAdsBoard/Infrastructure/ElectronicAdsBoard.Infrastructure.DataAccess/Context/Ad/Repositories/AdRepository.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\Users\musta\OneDrive\Рабочий стол\ASP.NET Rider\CourseApp\src\ElectronicAdsBoard\Infrastructure\ElectronicAdsBoard.Infrastructure.DataAccess\Context\Ad\Repositories\AdRepository.cs" initialLine="24" containingFunctionPresentation="Method 'CreateAsync'">
+            <startOffsets>
+              <option value="821" />
+            </startOffsets>
+            <endOffsets>
+              <option value="844" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/ElectronicAdsBoard/Hosts/ElectronicAdsBoard.Hosts.Api/Controllers/Ads/AdController.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Users\musta\OneDrive\Рабочий стол\ASP.NET Rider\CourseApp\src\ElectronicAdsBoard\Hosts\ElectronicAdsBoard.Hosts.Api\Controllers\Ads\AdController.cs" initialLine="18" containingFunctionPresentation="Constructor 'AdController'">
+            <startOffsets>
+              <option value="518" />
+            </startOffsets>
+            <endOffsets>
+              <option value="519" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,5 +1,7 @@
 ﻿using ElectronicAdsBoard.Application.AppServices.Interfaces;
 using ElectronicAdsBoard.Contracts;
+using ElectronicAdsBoard.Contracts.Ad;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ElectronicAdsBoard.Hosts.Api.Controllers.Ads;
@@ -27,7 +29,7 @@ public class AdController:ControllerBase
     [HttpGet("get-all")]
     public async Task<IActionResult> GetAllAsync(CancellationToken cancellationToken, int pageSize = 10, int pageIndex = 0)
     {
-        await _adService.GetAllAsync(pageSize, pageIndex);
+        await _adService.GetAllAsync(pageSize, pageIndex, cancellationToken);
         return Ok();
     }
 
@@ -40,8 +42,8 @@ public class AdController:ControllerBase
     [HttpGet("get-by-id")]
     public async Task<IActionResult> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
-        await _adService.GetByIdAsync(id);
-        return Ok();
+       var result = await _adService.GetByIdAsync(id, cancellationToken);
+        return Ok(result);
     }
 
     /// <summary>
@@ -50,10 +52,10 @@ public class AdController:ControllerBase
     /// <param name="dto">модель для создания</param>
     /// <param name="cancellationToken">Отмена</param>
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(AdDto dto, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateAsync(CreateAdDto dto, CancellationToken cancellationToken)
     {
-        await _adService.CreateAsync(dto);
-        return Created(string.Empty, null);
+        var modelAd = await _adService.CreateAsync(dto, cancellationToken);
+        return Created(nameof(CreateAsync), modelAd);
     }
 
     /// <summary>
@@ -64,7 +66,7 @@ public class AdController:ControllerBase
     [HttpPut]
     public async Task<IActionResult> UpdateAsync(AdDto dto, CancellationToken cancellationToken)
     {
-        await _adService.UpdateAsync(dto);
+        await _adService.UpdateAsync(dto, cancellationToken);
         return Ok();
     }
 
@@ -76,7 +78,7 @@ public class AdController:ControllerBase
     [HttpDelete]
     public async Task<IActionResult> DeleteAsync(Guid id, CancellationToken cancellationToken)
     {
-        await _adService.DeleteAsync(id);
+        await _adService.DeleteAsync(id, cancellationToken);
         return Ok();
     }
 }

@@ -4,11 +4,11 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>ElectronicAdsBoard.Infrastructure.Access</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Contracts\ElectronicAdsBoard.Contracts\ElectronicAdsBoard.Contracts.csproj" />
-      <ProjectReference Include="..\..\Domain\ElectronicAdsBoard.Domain\ElectronicAdsBoard.Domain.csproj" />
+      <ProjectReference Include="..\..\Application\ElectronicAdsBoard.Application.AppServices\ElectronicAdsBoard.Application.AppServices.csproj" />
     </ItemGroup>
 
 </Project>
